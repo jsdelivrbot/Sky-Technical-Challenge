@@ -8,7 +8,7 @@ There were two decisions that I took which is worth mentioning and I hope don’
 
 Having different repositories does means you would have to run each one separately, not ideal, so apologies. The product selection React app makes HTTP requests to each one of these to gather the initial data (location_id and products) required for the app to work.
 
-These repositories have already been transpiled using babel, therefor you simple need to  run __npm install__ and __npm run dev__ for each of the servers to start. Each uses a different port so there should not be any conflicts, however, if you have one of the below ports already in use, please change the port numbers in the config file of each repository:
+These repositories have already been transpiled using babel. Please ensure __node 5.8.0__ is installed, to run the servers and the React app, run __npm install__ and __npm run dev__ for each of the servers to start. Each uses a different port so there should not be any conflicts, however, if you have one of the below ports already in use, please change the port numbers in the config file of each repository:
 
 -	Catalogue service runs on http://localhost:3001
 -	Locations stub service runs on http://localhost:3002 
