@@ -9,7 +9,6 @@ describe('Product Selection Page' , () => {
         const props = {
             products: products
         };
-
         component = renderComponent(ProductSelection, props, props);
     });
 
