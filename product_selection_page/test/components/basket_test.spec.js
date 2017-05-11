@@ -1,18 +1,12 @@
 import { renderComponent , expect } from '../test_helper';
 import Basket from '../../src/components/basket';
+import { basket } from '../utils/';
 
 describe('Product List' , () => {
     let component;
 
     beforeEach(() => {
-        const props = {
-            basket: [
-                    {name: 'Arsenal TV', id: 'channel_1'},
-                    {name: 'Chelsea TV', id: 'channel_2'},
-                    {name: 'Liverpool TV', id: 'channel_3'}
-
-            ]
-        } ;
+        const props = basket;
 
         component = renderComponent(Basket, props, props);
     });
