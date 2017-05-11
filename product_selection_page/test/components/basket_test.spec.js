@@ -7,7 +7,6 @@ describe('Product List' , () => {
 
     beforeEach(() => {
         const props = basket;
-
         component = renderComponent(Basket, props, props);
     });
 
